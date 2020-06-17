@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MyFirstComponent } from './myFirstComponent/my-first.component';
+import { CreatesComponentCommandLineComponent } from './creates-component-command-line/creates-component-command-line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFirstComponent
+    MyFirstComponent,
+    CreatesComponentCommandLineComponent
   ],
   imports: [
     BrowserModule

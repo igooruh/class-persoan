@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { MyFirstComponent } from './myFirstComponent/my-first.component';
 import { CreatesComponentCommandLineComponent } from './creates-component-command-line/creates-component-command-line.component';
 
+import { EmployeesModule } from '../app/employees/employees.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +14,8 @@ import { CreatesComponentCommandLineComponent } from './creates-component-comman
     CreatesComponentCommandLineComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    EmployeesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

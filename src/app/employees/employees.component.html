@@ -1,1 +1,14 @@
 <p>Lista de cursos do portal {{ nomePortal }}</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Courses</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let course of courses'>
+            <td>{{course}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -13,9 +13,11 @@ export class EmployeesComponent implements OnInit {
 
   employees: string[];
 
-  constructor() {
+  constructor(private employeesService: EmployeesService) {
 
     this.nomePortal = 'http://loiane.training';
+
+    this.employees = this.employeesService.getCourses();
   }
 
   ngOnInit(): void {

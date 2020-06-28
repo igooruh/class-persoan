@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { EmployeesComponent } from './employees.component';
+import { EmployeesService } from './employees.service';
 
 
 @NgModule({
@@ -13,6 +14,9 @@ import { EmployeesComponent } from './employees.component';
   ],
   exports: [
     EmployeesComponent
+  ],
+  providers: [
+    EmployeesService
   ]
 })
 export class EmployeesModule { }

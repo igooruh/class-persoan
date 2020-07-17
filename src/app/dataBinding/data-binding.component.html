@@ -13,6 +13,8 @@
         <img bind-src="urlImage" alt="alternative text">
     </article> -->
 
+    <h2>Aula 10</h2>
+    <label for="angularLoiane">Curso Loiane no youtube</label>
     <article>
         <h3>Class and Style Binding</h3>
         <div>
@@ -37,6 +39,11 @@
                 [class.alert-warning]="classSelected.value == 'alert-warning'">Warning</div>
             <div class="alert" role="alert"
                 [class.alert-danger]="classSelected.value == 'alert-danger'">Danger</div>
+
+            <div class="alert alert-danger" role="alert"
+                [style.display]="classSelected.value == 'alert-danger' ? 'block' : 'none'">
+                This text show only when error case
+            </div>
         </div>
     </article>
 </section>

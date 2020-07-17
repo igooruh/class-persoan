@@ -25,6 +25,10 @@
             </select>
             <br><br>
 
+            <div class="alert {{ classSelected.value }}" role="alert">
+                Text colorize equal by value combobox
+            </div>
+
             <div class="alert" role="alert"
                 [class.alert-success]="classSelected.value == 'alert-success'">Success</div>
             <div class="alert" role="alert"

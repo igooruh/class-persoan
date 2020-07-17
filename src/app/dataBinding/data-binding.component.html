@@ -12,4 +12,27 @@
         <img [src]="urlImage" alt="alternative text">
         <img bind-src="urlImage" alt="alternative text">
     </article> -->
+
+    <article>
+        <h3>Class and Style Binding</h3>
+        <div>
+            Select a Class:
+            <select #classSelected (change)="0">
+                <option value="alert-success">Success</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Warning</option>
+                <option value="alert-danger">Danger</option>
+            </select>
+            <br><br>
+
+            <div class="alert" role="alert"
+                [class.alert-success]="classSelected.value == 'alert-success'">Success</div>
+            <div class="alert" role="alert"
+                [class.alert-info]="classSelected.value == 'alert-info'">Info</div>
+            <div class="alert" role="alert"
+                [class.alert-warning]="classSelected.value == 'alert-warning'">Warning</div>
+            <div class="alert" role="alert"
+                [class.alert-danger]="classSelected.value == 'alert-danger'">Danger</div>
+        </div>
+    </article>
 </section>
